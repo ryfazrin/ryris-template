@@ -20,7 +20,7 @@ function Footer() {
 
     return(
         <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
-            <BottomNavigationAction label="Home" value="home" icon={<Icon>home</Icon>} component={Link} to="/" />
+            <BottomNavigationAction label="Home" value="home" icon={<Icon>explore</Icon>} component={Link} to="/" />
             <BottomNavigationAction label="Search" value="search" icon={<Icon>search</Icon>} component={Link} to="/search" />
             <BottomNavigationAction label="Favorites" value="favorites" icon={<Icon>favorite</Icon>} component={Link} to="/favorite" />
             <BottomNavigationAction label="History" value="history" icon={<Icon>assignment</Icon>} component={Link} to="/history" />
