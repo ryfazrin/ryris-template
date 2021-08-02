@@ -15,6 +15,7 @@ Features used in this project
 The problem I got
 - [x] Position fixed BottomNavigation [here](https://stackoverflow.com/questions/49145960/material-ui-bottomnavigation-is-not-sticky-by-default)
 - [x] Add React-Route to BottomNavigation [here](https://stackoverflow.com/questions/48443772/react-material-ui-bottomnavigation-component-routing-issue/51255699)
+- [ ] Add custom style banner in home page
 - [ ] any...
 
 

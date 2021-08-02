@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import { Toolbar } from '@material-ui/core';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Header from './components/Header';
