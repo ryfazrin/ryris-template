@@ -7,12 +7,16 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'space-around',
         overflow: 'hidden',
         backgroundColor: theme.palette.background.paper,
-        marginTop: '1rem'
+        marginTop: '1rem',
+        marginBottom: '5rem',
     },
-    ImageList: {
+    banner: {
         flexWrap: 'nowrap',
         // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
         transform: 'translateZ(0)',
+    },
+    category: {
+        marginTop: '100px'
     },
     title: {
         color: theme.palette.secondary.light,
@@ -26,9 +30,30 @@ function Home() {
     const classes = useStyles();
 
     return(
-        // banner
         <div className={classes.root}>
-            <ImageList className={classes.ImageList} cols={2.5}>
+            {/* banner */}
+            <ImageList className={classes.banner} cols={2.5}>
+                {itemData.map((item) => (
+                    <ImageListItem key={item.img}>
+                        <img src={item.img} alt={item.title} />
+                        <ImageListItemBar
+                            title={item.title}
+                            classes={{
+                                root: classes.titleBar,
+                                title: classes.title,
+                            }}
+                            actionIcon={
+                                <IconButton aria-label={`star ${item.title}`}>
+                                    <Icon className={classes.title}>star_outlined</Icon>
+                                </IconButton>
+                            }
+                        />
+                    </ImageListItem>
+                ))}
+            </ImageList>
+            
+            {/* Category */}
+            <ImageList className={classes.category}>
                 {itemData.map((item) => (
                     <ImageListItem key={item.img}>
                         <img src={item.img} alt={item.title} />
