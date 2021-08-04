@@ -7,6 +7,25 @@ import Search from './pages/Search';
 import Favorite from './pages/Favorite';
 import History from './pages/History';
 
+const Routes = () => {
+  return (
+    <Switch>
+      <Route exact path="/">
+        <Home />
+      </Route>
+      <Route exact path="/search">
+        <Search />
+      </Route>
+      <Route exact path="/favorite">
+        <Favorite />
+      </Route>
+      <Route exact path="/history">
+        <History />
+      </Route>
+    </Switch>
+  );
+}
+
 function App() {
   return (
     <>
@@ -14,20 +33,7 @@ function App() {
         <Header />
         <Toolbar />
         
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/search">
-            <Search />
-          </Route>
-          <Route exact path="/favorite">
-            <Favorite />
-          </Route>
-          <Route exact path="/history">
-            <History />
-          </Route>
-        </Switch>
+        <Routes />
 
         <Footer />
       </BrowserRouter>
