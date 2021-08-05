@@ -2,6 +2,10 @@
 
 Ryris is a Food App that connects Delivery and Consumers.
 
+## Progress :
+- [x] Membuat Header dan Footer
+- [ ] Masih memodifikasi halaman home, yang mana masih mengatur tata letak dan kerapian komponen
+
 ## Temporary Features :
 
 Features used in this project
@@ -17,8 +21,6 @@ The problem I got
 - [x] Add React-Route to BottomNavigation [here](https://stackoverflow.com/questions/48443772/react-material-ui-bottomnavigation-component-routing-issue/51255699)
 - [ ] Add custom style banner in home page
 - [ ] any...
-
-
 
 
 ## Available Scripts in Ryris :
