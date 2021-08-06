@@ -1,4 +1,4 @@
-import { makeStyles, withStyles, Container, Grid, Fab, Icon, IconButton, Badge } from '@material-ui/core';
+import { makeStyles, withStyles, Container, Grid, Fab, Icon, Badge } from '@material-ui/core';
 import Banner from '../components/homeComponents/Banner';
 import CardCategory from '../components/homeComponents/CardCategory';
 
