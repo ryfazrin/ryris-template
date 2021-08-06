@@ -1,124 +1,79 @@
-import { Icon, IconButton, ImageListItem, makeStyles, ImageList, ImageListItemBar, Container, Card, CardActionArea, CardContent, CardMedia, Typography } from '@material-ui/core';
+import { makeStyles, withStyles, Container, Grid, Fab, Icon, IconButton, Badge } from '@material-ui/core';
+import Banner from '../components/homeComponents/Banner';
+import CardCategory from '../components/homeComponents/CardCategory';
 
 const useStyles = makeStyles((theme) => ({
     root: {
       display: 'flex',
       flexWrap: 'wrap',
-      justifyContent: 'space-around',
-      overflow: 'hidden',
-      backgroundColor: theme.palette.background.paper,
       marginTop: '1rem',
       marginBottom: '5rem',
     },
-    banner: {
-      flexWrap: 'nowrap',
-      // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
-      transform: 'translateZ(0)',
+    extendedIcon: {
+      marginRight: theme.spacing(1),
     },
-    category: {
-      marginTop: '1rem',
-    },
-    title: {
-      color: theme.palette.secondary.light,
-    },
-    titleBar: {
-      background: 'linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
-    },
-    media:{
-      height: 140,
+    fab: {
+      position: 'fixed',
+      padding: '0 10px',
+      bottom: theme.spacing(8),
+      right: theme.spacing(2),
     },
 }));
 
+const StyledBadge = withStyles((theme) => ({
+  badge: {
+    // top: 13,
+    border: `2px solid ${theme.palette.background.paper}`,
+    padding: '0 4px',
+  },
+}))(Badge);
 
 function Home() {
     const classes = useStyles();
     
     return(
-        <Container className={classes.root} maxWidth="sm">
-            {/* banner */}
-            <ImageList className={classes.banner} cols={2.5}>
-              {itemData.map((item) => (
-                <ImageListItem key={item.img}>
-                  <img src={item.img} alt={item.title} />
-                  <ImageListItemBar
-                    title={item.title}
-                    classes={{
-                      root: classes.titleBar,
-                      title: classes.title,
-                    }}
-                    actionIcon={
-                      <IconButton aria-label={`star ${item.title}`}>
-                          <Icon className={classes.title}>star_outlined</Icon>
-                      </IconButton>
-                    }
-                  />
-                </ImageListItem>
-              ))}
-            </ImageList>
+      <Container maxWidth="md">
+        <Grid className={classes.root} container spacing={2} display='flex'>
             
-            {/* Category */}
-            {/* <ImageList className={classes.category}>
-                {itemData.map((item) => (
-                    <ImageListItem key={item.img}>
-                        <img src={item.img} alt={item.title} />
-                        <ImageListItemBar
-                            title={item.title}
-                            classes={{
-                                root: classes.titleBar,
-                                title: classes.title,
-                            }}
-                            actionIcon={
-                                <IconButton aria-label={`star ${item.title}`}>
-                                    <Icon className={classes.title}>star_outlined</Icon>
-                                </IconButton>
-                            }
-                        />
-                    </ImageListItem>
-                ))}
-            </ImageList> */}
+            <Grid item xs={12}>
+              {/* banner */}
+              <Banner />
+            </Grid>
 
-            {/* Card */}
-            <Card>
-              <CardActionArea>
-                <CardMedia
-                  className={classes.media}
-                  image="images/breakfast.jpg"
-                  title="breakfast" />
-              </CardActionArea>
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  Lizard
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  RP. 100.000,-
-                </Typography>
-              </CardContent>
-            </Card>
-        </Container>
+            <Grid item xs={12} alignContent='center'>
+              <Grid container spacing={2}>
+                {/* Card Category */}
+                <Grid item xs={6}>
+                  <CardCategory />
+                </Grid>
+                <Grid item xs={6}>
+                  <CardCategory />
+                </Grid>
+                <Grid item xs={6}>
+                  <CardCategory />
+                </Grid>
+                <Grid item xs={6}>
+                  <CardCategory />
+                </Grid>
+              </Grid>
+            </Grid>
+
+            <Grid item xs={12}>
+              {/* banner */}
+              <Banner />
+            </Grid>
+
+        </Grid>
+
+        <Fab variant="extended" color="secondary" className={classes.fab}>
+          Masakan Padang | Rp.100.000,-
+          <StyledBadge badgeContent={4} color="primary">
+            <Icon className={classes.extendedIcon}>shopping_cart</Icon>
+          </StyledBadge>
+        </Fab>
+        
+      </Container>
     );
 }
-
-const itemData = [
-    {
-        img: 'images/breakfast.jpg',
-        title: 'Breakfast',
-    },
-    {
-        img: 'images/bike.jpg',
-        title: 'Bike',
-    },
-    {
-        img: 'images/burgers.jpg',
-        title: 'Burgers',
-    },
-    {
-        img: 'images/camera.jpg',
-        title: 'Camera',
-    },
-    {
-        img: 'images/vegetables.jpg',
-        title: 'Vegetables',
-    }
-];
 
 export default Home;
