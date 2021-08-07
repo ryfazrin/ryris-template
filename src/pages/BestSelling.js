@@ -15,7 +15,7 @@ function BestSelling() {
   const item = [];
 
   for (let i = 0; i < 10; i++) {
-    item.push(<Grid item md={3} xs={6}><CardItem /></Grid>);
+    item.push(<Grid item md={4} xs={6}><CardItem /></Grid>);
   }
 
   return(
@@ -30,7 +30,7 @@ function BestSelling() {
 
         <Grid item xs={12}>
           <Grid container spacing={2} justifyContent="center">
-          {item}
+            {item}
           </Grid>
         </Grid>
       </Grid>
