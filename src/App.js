@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Search from './pages/Search';
 import Favorite from './pages/Favorite';
 import History from './pages/History';
+import BestSelling from './pages/BestSelling';
 
 const Routes = () => {
   return (
@@ -21,6 +22,9 @@ const Routes = () => {
       </Route>
       <Route exact path="/history">
         <History />
+      </Route>
+      <Route exact path="/best-selling">
+        <BestSelling />
       </Route>
     </Switch>
   );

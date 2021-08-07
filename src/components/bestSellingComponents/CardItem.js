@@ -1,4 +1,4 @@
-import {Card, CardActionArea, CardContent, CardMedia, Typography, makeStyles } from "@material-ui/core";
+import {Card, CardActionArea, CardContent, CardMedia, Typography, makeStyles, CardActions, Button } from "@material-ui/core";
 import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles(() => ({
@@ -10,7 +10,7 @@ const useStyles = makeStyles(() => ({
     },
 }));
 
-function CardCategory() {
+function CardItem() {
     const classes = useStyles();
     return(
       <Card className={classes.root}>
@@ -21,15 +21,20 @@ function CardCategory() {
             title="breakfast" />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              Terlaris
+              Pisang banana
             </Typography>
-            {/* <Typography variant="body2" color="textSecondary" component="p">
+            <Typography variant="body2" color="textSecondary" component="p">
               RP. 100.000,-
-            </Typography> */}
+            </Typography>
           </CardContent>
         </CardActionArea>
+        <CardActions>
+          <Button size="small" color="secondary">
+            Tambah
+          </Button>
+        </CardActions>
       </Card>
     );
 }
 
-export default CardCategory;
+export default CardItem;

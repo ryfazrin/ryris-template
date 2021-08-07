@@ -5,26 +5,27 @@ import CardCategory from '../components/homeComponents/CardCategory';
 const useStyles = makeStyles((theme) => ({
     root: {
       display: 'flex',
-      flexWrap: 'wrap',
+      // flexWrap: 'wrap',
+      flexGrow: 1,
       marginTop: '1rem',
-      marginBottom: '5rem',
+      marginBottom: '6rem',
     },
     extendedIcon: {
       marginRight: theme.spacing(1),
     },
     fab: {
       position: 'fixed',
-      padding: '0 10px',
       bottom: theme.spacing(8),
       right: theme.spacing(2),
     },
+    fabArrow: {
+      marginLeft: '1rem'
+    }
 }));
 
 const StyledBadge = withStyles((theme) => ({
   badge: {
-    // top: 13,
     border: `2px solid ${theme.palette.background.paper}`,
-    padding: '0 4px',
   },
 }))(Badge);
 
@@ -33,26 +34,26 @@ function Home() {
     
     return(
       <Container maxWidth="md">
-        <Grid className={classes.root} container spacing={2} display='flex'>
+        <Grid className={classes.root} container spacing={2}>
             
             <Grid item xs={12}>
               {/* banner */}
               <Banner />
             </Grid>
 
-            <Grid item xs={12} alignContent='center'>
-              <Grid container spacing={2}>
+            <Grid item xs={12}>
+              <Grid container spacing={2} justifyContent="center">
                 {/* Card Category */}
-                <Grid item xs={6}>
+                <Grid item justifyContent="center" lg={6}>
                   <CardCategory />
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item lg={6}>
                   <CardCategory />
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item lg={6}>
                   <CardCategory />
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item lg={6}>
                   <CardCategory />
                 </Grid>
               </Grid>
@@ -66,10 +67,11 @@ function Home() {
         </Grid>
 
         <Fab variant="extended" color="secondary" className={classes.fab}>
-          Masakan Padang | Rp.100.000,-
+          3 item | Rp.100.000,-
           <StyledBadge badgeContent={4} color="primary">
             <Icon className={classes.extendedIcon}>shopping_cart</Icon>
           </StyledBadge>
+          <Icon className={classes.fabArrow}>arrow_forward</Icon>
         </Fab>
         
       </Container>

@@ -3,8 +3,11 @@
 Ryris is a Food App that connects Delivery and Consumers.
 
 ## Progress :
+
 - [x] Membuat Header dan Footer
-- [ ] Masih memodifikasi halaman home, yang mana masih mengatur tata letak dan kerapian komponen
+- [x] Masih memodifikasi halaman home, yang mana masih mengatur tata letak dan kerapian komponen
+- [x] Menambahkan halaman list terlaris dan componen-nya
+- [ ] lain-lain...
 
 ## Temporary Features :
 
@@ -20,6 +23,7 @@ The problem I got
 - [x] Position fixed BottomNavigation [here](https://stackoverflow.com/questions/49145960/material-ui-bottomnavigation-is-not-sticky-by-default)
 - [x] Add React-Route to BottomNavigation [here](https://stackoverflow.com/questions/48443772/react-material-ui-bottomnavigation-component-routing-issue/51255699)
 - [ ] Add custom style banner in home page
+- [x] Understand clean page with component in react [React documentation](https://reactjs.org/)
 - [ ] any...
 
 
