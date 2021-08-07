@@ -1,4 +1,4 @@
-import { makeStyles, withStyles, Container, Grid, Fab, Icon, Badge } from '@material-ui/core';
+import { makeStyles, withStyles, Container, Grid, Fab, Icon, Badge, Divider } from '@material-ui/core';
 import Banner from '../components/homeComponents/Banner';
 import CardCategory from '../components/homeComponents/CardCategory';
 
@@ -39,21 +39,22 @@ function Home() {
             <Grid item xs={12}>
               {/* banner */}
               <Banner />
+              
             </Grid>
 
             <Grid item xs={12}>
               <Grid container spacing={2} justifyContent="center">
                 {/* Card Category */}
-                <Grid item justifyContent="center" lg={6}>
+                <Grid item xs={6}>
                   <CardCategory />
                 </Grid>
-                <Grid item lg={6}>
+                <Grid item xs={6}>
                   <CardCategory />
                 </Grid>
-                <Grid item lg={6}>
+                <Grid item xs={6}>
                   <CardCategory />
                 </Grid>
-                <Grid item lg={6}>
+                <Grid item xs={6}>
                   <CardCategory />
                 </Grid>
               </Grid>
