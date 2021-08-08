@@ -7,6 +7,7 @@ import Search from './pages/Search';
 import Favorite from './pages/Favorite';
 import History from './pages/History';
 import BestSelling from './pages/BestSelling';
+import ButtonCart from './components/ButtonCart';
 
 const Routes = () => {
   return (
@@ -39,6 +40,7 @@ function App() {
         
         <Routes />
 
+        <ButtonCart />
         <Footer />
       </BrowserRouter>
     </>
