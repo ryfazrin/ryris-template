@@ -38,7 +38,7 @@ const Routes = () => {
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/ryris-template">
         <Header />
         <Toolbar />
 
