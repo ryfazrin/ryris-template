@@ -6,17 +6,20 @@ Ryris is a Food App that connects Delivery and Consumers.
 
 - [x] Membuat Header dan Footer
 - [x] Masih memodifikasi halaman home, yang mana masih mengatur tata letak dan kerapian komponen
-- [x] Menambahkan halaman list terlaris dan componen-nya
-- [x] Menambahkan halaman detail atau drawer bottom
-- [x] menambahkan button cart
-- [ ] Menambahkan halaman cart
-- [ ] 
+- [x] Halaman list terlaris dan componen-nya
+- [x] Halaman detail atau drawer bottom
+- [x] Menambahkan button cart
+- [x] Halaman cart
+- [ ] Halaman Alamat & Pembayaran
+- [ ] Halaman Konfirmasi metode Transfer
+- [ ] Halaman tracking
+- [ ] Halaman akun
 - [ ] lain-lain...
 
 ## Temporary Features :
 
 Features used in this project
-* [ReactJs](https://reactjs.org/) or [create-react-app](https://create-react-app.dev/)
+* [Create React App](https://create-react-app.dev/) *docs [ReactJs](https://reactjs.org/)
 * [react-router-dom](https://reactrouter.com/web/guides/quick-start)
 * [Material Ui](https://material-ui.com/)
 * [Material Icon](https://fonts.google.com/icons?selected=Material+Icons)
@@ -24,11 +27,12 @@ Features used in this project
 ## My Issue :
 
 The problem I got
-- [x] Position fixed BottomNavigation [here](https://stackoverflow.com/questions/49145960/material-ui-bottomnavigation-is-not-sticky-by-default)
-- [x] Add React-Route to BottomNavigation [here](https://stackoverflow.com/questions/48443772/react-material-ui-bottomnavigation-component-routing-issue/51255699)
+- [x] Position fixed BottomNavigation [Here](https://stackoverflow.com/questions/49145960/material-ui-bottomnavigation-is-not-sticky-by-default)
+- [x] Add React-Route to BottomNavigation [Here](https://stackoverflow.com/questions/48443772/react-material-ui-bottomnavigation-component-routing-issue/51255699)
 - [ ] Add custom style banner in home page
 - [x] Understand clean page with component in react [React documentation](https://reactjs.org/)
 - [ ] If page is cart page, hidden or remove button cart
+- [x] cart CardItem with grid system [Complex-Grid](https://material-ui.com/components/grid/#complex-grid)
 - [ ] any...
 
 
