@@ -2,9 +2,6 @@ import {Card, CardActionArea, CardContent, CardMedia, Typography, makeStyles } f
 import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles(() => ({
-    root: {
-      maxWidth: 345,
-    },
     media:{
       height: 140,
     },
@@ -13,7 +10,7 @@ const useStyles = makeStyles(() => ({
 function CardCategory() {
     const classes = useStyles();
     return(
-      <Card className={classes.root}>
+      <Card elevation={0}>
         <CardActionArea component={Link} to="/best-selling">
           <CardMedia
             className={classes.media}
@@ -23,9 +20,6 @@ function CardCategory() {
             <Typography gutterBottom variant="h5" component="h2">
               Terlaris
             </Typography>
-            {/* <Typography variant="body2" color="textSecondary" component="p">
-              RP. 100.000,-
-            </Typography> */}
           </CardContent>
         </CardActionArea>
       </Card>

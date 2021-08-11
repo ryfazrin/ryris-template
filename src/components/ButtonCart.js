@@ -24,7 +24,7 @@ function ButtonCart() {
     const classes = useStyles();
     
     return(
-      <Fab variant="extended" color="secondary" className={classes.fab}>
+      <Fab variant="extended" color="secondary" className={classes.fab} elevation={0}>
         3 item dimasukkan | 100.000,-
         <StyledBadge badgeContent={3} color="primary">
           <Icon className={classes.extendedIcon}>shopping_cart</Icon>

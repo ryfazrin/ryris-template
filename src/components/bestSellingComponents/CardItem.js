@@ -16,7 +16,7 @@ import clsx from 'clsx';
 
 const useStyles = makeStyles(() => ({
   root: {
-    maxWidth: 345,
+    // maxWidth: 345,
   },
   media: {
     height: '0',
@@ -113,8 +113,9 @@ function CardItem() {
       <Drawer
         anchor="bottom"
         open={state["bottom"]}
-        onClose={toggleDrawer("bottom", false)}
-      >{list('bottom')}</Drawer>
+        onClose={toggleDrawer("bottom", false)}>
+        {list('bottom')}
+      </Drawer>
     </Card>
   );
 }
