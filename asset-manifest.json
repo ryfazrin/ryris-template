@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ryris-template/static/css/main.d15205f4.chunk.css",
-    "main.js": "/ryris-template/static/js/main.b6c1fe78.chunk.js",
-    "main.js.map": "/ryris-template/static/js/main.b6c1fe78.chunk.js.map",
+    "main.js": "/ryris-template/static/js/main.2f50981e.chunk.js",
+    "main.js.map": "/ryris-template/static/js/main.2f50981e.chunk.js.map",
     "runtime-main.js": "/ryris-template/static/js/runtime-main.4522ca80.js",
     "runtime-main.js.map": "/ryris-template/static/js/runtime-main.4522ca80.js.map",
     "static/js/2.1e1e85ee.chunk.js": "/ryris-template/static/js/2.1e1e85ee.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.4522ca80.js",
     "static/js/2.1e1e85ee.chunk.js",
     "static/css/main.d15205f4.chunk.css",
-    "static/js/main.b6c1fe78.chunk.js"
+    "static/js/main.2f50981e.chunk.js"
   ]
 }
