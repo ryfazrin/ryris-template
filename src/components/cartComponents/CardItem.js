@@ -1,71 +1,78 @@
 import {
-  Card,
-  CardContent,
-  CardMedia,
   Typography,
   makeStyles,
   Icon,
   Button,
+  Paper,
+  Grid,
+  ButtonBase
 } from "@material-ui/core";
 import React from "react";
 
+// note : However, if the design of this card item looks ugly. I Suggest use a complicated grid
+// https://material-ui.com/components/grid/#complex-grid
+
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
-    align: 'center'
+    flexGrow: 1
   },
-  details: {
-    display: 'block',
-    flexDirection: 'column',
+  paper: {
+    padding: theme.spacing(2),
+    margin: "auto",
+    maxWidth: 500
   },
-  content: {
-    flex: '1 0 auto',
+  image: {
+    width: '100%',
+    // height: '100%'
   },
-  cover: {
-    width: 300,
-  },
-  controls: {
-    display: 'flex',
-    alignItems: 'center',
-    paddingLeft: theme.spacing(1),
-    paddingBottom: theme.spacing(1),
-  },
-  playIcon: {
-    height: 38,
-    width: 38,
-  },
-  // media: {
-  //   height: '0',
-  //   paddingTop: '56.25%', // 16:9
-  // },
+  img: {
+    margin: "auto",
+    display: "block",
+    width: "100%",
+    height: "100%"
+  }
 }));
 
 function CardItem() {
   const classes = useStyles();
 
-  return (
-    <Card className={classes.root} elevation={5}>
-      <div className={classes.details}>
-        <CardContent className={classes.content}>
-          <Typography component="h5" variant="h5">
-            Pesanan 1
-          </Typography>
-          <Typography variant="subtitle1" color="textSecondary">
-            Rp. 100.000,-
-          </Typography>
-        </CardContent>
-        <div className={classes.controls}>
-        <Button color="secondary">
-          <Icon>list</Icon> Catatan
-        </Button>
-        </div>
-      </div>
-      <CardMedia
-        className={classes.cover}
-        image="images/breakfast.jpg"
-        title="Breakfast"
-      />
-    </Card>
+  return(
+      <div className={classes.root}>
+      <Paper className={classes.paper}>
+        <Grid container spacing={2}>
+          <Grid item xs={6} container>
+            <Grid item xs container direction="column" spacing={2}>
+              <Grid item xs>
+                <Typography gutterBottom variant="subtitle1">
+                  Pesanan pisang keju bercampur pisang
+                </Typography>
+                <Typography variant="body2" gutterBottom>
+                  Rp. 100.000,-
+                </Typography>
+                <Typography variant="body2" color="textSecondary">
+                  ID: 1030114
+                </Typography>
+              </Grid>
+              <Grid item>
+                <Button variant='outlined' color="secondary">
+                  <Icon>list</Icon>
+                    Catatan
+                </Button>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid xs={6} item>
+            <ButtonBase className={classes.image}>
+              <img
+                className={classes.img}
+                alt="Breakfast"
+                src="images/breakfast.jpg"
+              />
+            </ButtonBase>
+          </Grid>
+        </Grid>
+      </Paper>
+    </div>
   );
 }
 

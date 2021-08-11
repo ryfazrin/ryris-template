@@ -8,6 +8,9 @@ const useStyles = makeStyles((theme) => ({
     marginTop: '1rem',
     marginBottom: '6rem',
   },
+  // cardItem: {
+  //   justifyContent: 'center'
+  // }
 }));
 
 function Cart() {
@@ -15,12 +18,12 @@ function Cart() {
   const item = [];
 
   for (let i = 0; i < 3; i++) {
-    item.push(<Grid item xs={12}><CardItem /></Grid>);
+    item.push(<Grid item className={classes.cardItem} xs={12}><CardItem /></Grid>);
   }
 
   return(
     <Container maxWidth="md">
-      <Grid className={classes.root} container spacing={2}>
+      <Grid className={classes.root} container spacing={2} xs={12}>
 
         <Grid item xs={12}>
           <Typography variant="h4" gutterBottom>
