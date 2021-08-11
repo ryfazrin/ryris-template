@@ -7,6 +7,10 @@ Ryris is a Food App that connects Delivery and Consumers.
 - [x] Membuat Header dan Footer
 - [x] Masih memodifikasi halaman home, yang mana masih mengatur tata letak dan kerapian komponen
 - [x] Menambahkan halaman list terlaris dan componen-nya
+- [x] Menambahkan halaman detail atau drawer bottom
+- [x] menambahkan button cart
+- [ ] Menambahkan halaman cart
+- [ ] 
 - [ ] lain-lain...
 
 ## Temporary Features :
@@ -24,6 +28,7 @@ The problem I got
 - [x] Add React-Route to BottomNavigation [here](https://stackoverflow.com/questions/48443772/react-material-ui-bottomnavigation-component-routing-issue/51255699)
 - [ ] Add custom style banner in home page
 - [x] Understand clean page with component in react [React documentation](https://reactjs.org/)
+- [ ] If page is cart page, hidden or remove button cart
 - [ ] any...
 
 
