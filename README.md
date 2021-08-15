@@ -10,6 +10,7 @@ Ryris is a Food App that connects Delivery and Consumers.
 - [x] Halaman detail atau drawer bottom
 - [x] Menambahkan button cart
 - [x] Halaman cart
+- [x] Halaman Riwayat (History)
 - [ ] Halaman Alamat & Pembayaran
 - [ ] Halaman Konfirmasi metode Transfer
 - [ ] Halaman tracking
