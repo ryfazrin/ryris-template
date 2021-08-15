@@ -28,12 +28,13 @@ Features used in this project
 ## My Issue :
 
 The problem I got
+- [x] Understand clean page with component in react [React documentation](https://reactjs.org/)
 - [x] Position fixed BottomNavigation [Here](https://stackoverflow.com/questions/49145960/material-ui-bottomnavigation-is-not-sticky-by-default)
 - [x] Add React-Route to BottomNavigation [Here](https://stackoverflow.com/questions/48443772/react-material-ui-bottomnavigation-component-routing-issue/51255699)
 - [ ] Add custom style banner in home page
-- [x] Understand clean page with component in react [React documentation](https://reactjs.org/)
 - [ ] If page is cart page, hidden or remove button cart
-- [x] cart CardItem with grid system [Complex-Grid](https://material-ui.com/components/grid/#complex-grid)
+- [x] cart CardItem with Grid System [Complex-Grid](https://material-ui.com/components/grid/#complex-grid)
+- [x] history Carditem with Grid System & Box flexbox [Complex-Grid](https://material-ui.com/components/grid/#complex-grid) - [Flexbox](https://material-ui.com/system/flexbox/)
 - [ ] any...
 
 
