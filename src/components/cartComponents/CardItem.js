@@ -43,7 +43,7 @@ function CardItem() {
             <Grid item xs container direction="column" spacing={2}>
               <Grid item xs>
                 <Typography gutterBottom variant="subtitle1">
-                  Pesanan pisang keju bercampur pisang
+                  Pesanan pisang
                 </Typography>
                 <Typography variant="body2" gutterBottom>
                   Rp. 100.000,-
@@ -53,7 +53,7 @@ function CardItem() {
                 </Typography>
               </Grid>
               <Grid item>
-                <Button variant='outlined' color="secondary">
+                <Button size="small" variant='outlined' color="secondary">
                   <Icon>list</Icon>
                     Catatan
                 </Button>

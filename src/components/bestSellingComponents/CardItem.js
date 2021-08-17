@@ -76,7 +76,7 @@ function CardItem() {
           </CardContent>
           <Divider />
           <CardActions>
-            <Button variant="contained" color="secondary">
+            <Button variant="contained" color="secondary" fullWidth>
               Tambah
             </Button>
           </CardActions>
@@ -105,7 +105,7 @@ function CardItem() {
       </React.Fragment>
 
       <CardActions>
-        <Button variant="outlined" size="small" color="secondary" width='100%'>
+        <Button variant="outlined" size="small" color="secondary" fullWidth>
           Tambah
         </Button>
       </CardActions>
