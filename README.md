@@ -1,5 +1,4 @@
 # Ryris Template
-ini tes commit dari smartpohne
 
 Ryris is a Food App that connects Delivery and Consumers.
 
