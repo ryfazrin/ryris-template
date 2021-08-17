@@ -1,4 +1,5 @@
 import { AppBar, Icon, IconButton, Toolbar, Typography, makeStyles } from "@material-ui/core";
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -24,7 +25,7 @@ function Header() {
                     <Typography variant="h6" className={classes.title}>
                         Ryris
                     </Typography>
-                    <IconButton color="inherit">
+                    <IconButton color="inherit" component={Link} to="/account">
                         <Icon>account_circle</Icon>
                     </IconButton>
                 </Toolbar>
