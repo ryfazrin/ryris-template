@@ -1,14 +1,13 @@
 import {
   Typography,
   makeStyles,
-  Icon,
   Button,
   Paper,
   Grid,
   ButtonBase,
   Box,
-  Badge,
-  Chip
+  Chip,
+  Divider
 } from "@material-ui/core";
 import React from "react";
 
@@ -57,7 +56,7 @@ function CardItem() {
           <Grid item xs sm container>
             <Grid item xs container direction="column">
               <Grid item xs>
-                <Typography variant="h6" gutterBottom>
+                <Typography variant="subtitle1" gutterBottom>
                   Menu Pertama
                 </Typography>
                 <Typography variant="body2" gutterBottom>
@@ -80,16 +79,16 @@ function CardItem() {
           </Grid>
           
           <Grid item xs={12}>
-            <Box display="flex" justifyContent="flex-end" bgcolor="background.paper">
+            <Divider />
+            <Box display="flex" marginTop={2} justifyContent="flex-end" bgcolor="background.paper">
               <Box flexGrow={1} justifyContent="center">
                 <Typography variant="subtitle1" gutterBottom>
                   Rp. 100.000,-
                 </Typography>
               </Box>
               <Box>
-                <Button variant='outlined' color="secondary">
-                  <Icon>list</Icon>
-                    Catatan
+                <Button variant="outlined" color="secondary">
+                    Pesan Lagi
                 </Button>
               </Box>
             </Box>
