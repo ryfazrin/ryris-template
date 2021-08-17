@@ -9,6 +9,7 @@ import Favorite from "./pages/Favorite";
 import History from "./pages/History";
 import BestSelling from "./pages/BestSelling";
 import Cart from './pages/Cart';
+import Account from './pages/account';
 
 const Routes = () => {
   return (
@@ -16,21 +17,25 @@ const Routes = () => {
       <Route exact path="/">
         <Home />
       </Route>
-      <Route path="/search">
+      <Route exact path="/search">
         <Search />
       </Route>
-      <Route path="/favorite">
+      <Route exact path="/favorite">
         <Favorite />
       </Route>
-      <Route path="/history">
+      <Route exact path="/history">
         <History />
       </Route>
-      <Route path="/best-selling">
+      <Route exact path="/best-selling">
         <BestSelling />
       </Route>
-      <Route path="/cart">
+      <Route exact path="/cart">
         <Cart />
       </Route>
+      <Route exact path="/account">
+        <Account />
+      </Route>
+      <Route path="*" component={Home} />
     </Switch>
   );
 };
