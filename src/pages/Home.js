@@ -16,7 +16,7 @@ function Home() {
     const classes = useStyles();
     
     return(
-      <Container maxWidth="md">
+      <div style={{ overflow: 'hidden' }}>
         <Grid className={classes.root} container spacing={2}>
             
             <Grid item xs={12}>
@@ -26,6 +26,7 @@ function Home() {
             </Grid>
 
             <Grid item xs={12}>
+            <Container>
               <Grid container spacing={2} justifyContent="center">
                 {/* Card Category */}
                 <Grid item xs={6}>
@@ -41,6 +42,7 @@ function Home() {
                   <CardCategory />
                 </Grid>
               </Grid>
+            </Container>
             </Grid>
 
             <Grid item xs={12}>
@@ -49,7 +51,7 @@ function Home() {
             </Grid>
 
         </Grid>
-      </Container>
+      </div>
     );
 }
 
