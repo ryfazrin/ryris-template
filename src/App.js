@@ -1,57 +1,37 @@
 import { Toolbar } from "@material-ui/core";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Routes from './config/routes';
 import ButtonCart from "./components/ButtonCart";
-import Home from "./pages/Home";
-import Search from "./pages/Search";
-import Favorite from "./pages/Favorite";
-import History from "./pages/History";
-import BestSelling from "./pages/BestSelling";
-import Cart from './pages/Cart';
-import Account from './pages/account';
-
-const Routes = () => {
-  return (
-    <Switch>
-      <Route exact path="/">
-        <Home />
-      </Route>
-      <Route exact path="/search">
-        <Search />
-      </Route>
-      <Route exact path="/favorite">
-        <Favorite />
-      </Route>
-      <Route exact path="/history">
-        <History />
-      </Route>
-      <Route exact path="/best-selling">
-        <BestSelling />
-      </Route>
-      <Route exact path="/cart">
-        <Cart />
-      </Route>
-      <Route exact path="/account">
-        <Account />
-      </Route>
-      <Route path="*" component={Home} />
-    </Switch>
-  );
-};
+// import Account from './pages/account';
 
 function App() {
+  let location = useLocation();
+  const ButtonShow = () => {
+    if (location.pathname.match('/cart')){
+      return null;
+    }
+
+    return <ButtonCart />;
+
+    // if (typeof location.pathname == "string") {
+    //   console.log("string");
+    // } else {
+    //   console.log("Not a string");
+    // }
+  }
+
+
   return (
     <>
-      <BrowserRouter basename="/ryris-template">
-        <Header />
-        <Toolbar />
+      <Header />
+      <Toolbar />
 
-        <Routes />
-
-        <ButtonCart />
-        <Footer />
-      </BrowserRouter>
+      <Routes />
+      
+      <ButtonShow />
+      <Footer />
     </>
   );
 }
