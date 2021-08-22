@@ -1,4 +1,4 @@
-import { Typography, makeStyles, Container, Grid } from "@material-ui/core";
+import { Typography, makeStyles, Container, Grid, Button } from "@material-ui/core";
 import CardItem from './../components/cartComponents/CardItem';
 
 const useStyles = makeStyles((theme) => ({
@@ -32,6 +32,12 @@ function Cart() {
         </Grid>
 
         {item}
+
+        <Grid item xs={12}>
+            <Button variant="contained" color="secondary" fullWidth>
+              Pesan
+            </Button>
+        </Grid>
 
       </Grid>
     </Container>
