@@ -8,20 +8,19 @@ import ButtonCart from "./components/ButtonCart";
 
 function App() {
   let location = useLocation();
-  const ButtonShow = () => {
+
+  const CartCondition = () => {
     if (location.pathname.match('/cart')){
       return null;
     }
 
-    return <ButtonCart />;
-
-    // if (typeof location.pathname == "string") {
-    //   console.log("string");
-    // } else {
-    //   console.log("Not a string");
-    // }
+    return (
+      <>
+        <ButtonCart />
+        <Footer />
+      </>
+    );
   }
-
 
   return (
     <>
@@ -30,8 +29,7 @@ function App() {
 
       <Routes />
       
-      <ButtonShow />
-      <Footer />
+      <CartCondition />
     </>
   );
 }
