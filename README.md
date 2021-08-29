@@ -2,22 +2,40 @@
 
 Ryris is a Food App that connects Delivery and Consumers.
 
-## Progress :
+## Progress
 
 - [x] Membuat Header dan Footer
 - [x] Masih memodifikasi halaman home, yang mana masih mengatur tata letak dan kerapian komponen
 - [x] Halaman list terlaris dan componen-nya
-- [x] Halaman detail atau drawer bottom
+- [x] Halaman detail kuliner dengan drawer bottom
 - [x] Menambahkan button cart
 - [x] Halaman cart
 - [x] Halaman Riwayat (History)
-- [ ] Halaman Alamat & Pembayaran
+- [ ] Halaman Alamat & Pembayaran (Order Details)
 - [ ] Halaman Konfirmasi metode Transfer
 - [ ] Halaman tracking
 - [ ] Halaman akun
 - [ ] lain-lain...
 
-## Temporary Features :
+## Pages Routes
+- [x] Utama (`/`)
+- [x] List Kuliner 
+  - [x] Terlaris (`/best-selling`)
+  - [ ] Terakhir dibeli (`/last-bought`)
+  - [ ] Makanan (`/foods`)
+  - [ ] Minuman (`/drinks`)
+  - [ ] Makanan Jenis Roti (`/breads`)
+  - [ ] Makanan Jenis Cemilan (`/snacks`)
+  - [ ] Favorit (`/favorite`)
+  - [ ] Pencarian (`/search`)
+- [x] Keranjang (`/cart`)
+- [ ] Alamat & Pembayaran (`/order-details`)
+- [ ] Konfirmasi Pembayaran (`/confirm`)
+- [ ] Pantau Pesanan (`/tracking`)
+- [x] Riwayat Pesanan (`/history`)
+- [ ] Akun (`/account`)
+
+## Temporary Features
 
 Features used in this project
 * [Create React App](https://create-react-app.dev/) *docs [ReactJs](https://reactjs.org/)
@@ -25,7 +43,7 @@ Features used in this project
 * [Material Ui](https://material-ui.com/)
 * [Material Icon](https://fonts.google.com/icons?selected=Material+Icons)
 
-## My Issue :
+## My Issue
 
 The problem I got
 - [x] Understand clean page with component in react [React documentation](https://reactjs.org/)
@@ -35,10 +53,12 @@ The problem I got
 - [ ] If page is cart page, hidden or remove button cart
 - [x] cart CardItem with Grid System [Complex-Grid](https://material-ui.com/components/grid/#complex-grid)
 - [x] history Carditem with Grid System & Box flexbox [Complex-Grid](https://material-ui.com/components/grid/#complex-grid) - [Flexbox](https://material-ui.com/system/flexbox/)
+- [x] Confused. Changed git branch, and merged main [Here](https://stackoverflow.com/questions/1628563/move-the-most-recent-commits-to-a-new-branch-with-git)
+- [x] BrowserRouter or HashRouter? [Here](https://stackoverflow.com/questions/51974369/what-is-the-difference-between-hashrouter-and-browserrouter-in-react)
 - [ ] any...
 
 
-## Available Scripts in Ryris :
+## Available Scripts in Ryris
 
 In the project directory, you can run:
 
