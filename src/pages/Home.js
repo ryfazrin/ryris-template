@@ -1,13 +1,12 @@
 import { makeStyles, Container, Grid } from '@material-ui/core';
-import Banner from '../components/homeComponents/Banner';
+import HomeCarousel from '../components/homeComponents/HomeCarousel';
 import CardCategory from '../components/homeComponents/CardCategory';
+import MenuList from '../components/homeComponents/MenuList';
 
 const useStyles = makeStyles((theme) => ({
     root: {
       display: 'flex',
-      // flexWrap: 'wrap',
       flexGrow: 1,
-      marginTop: '1rem',
       marginBottom: '6rem',
     },
 }));
@@ -20,9 +19,8 @@ function Home() {
         <Grid className={classes.root} container spacing={2}>
             
             <Grid item xs={12}>
-              {/* banner */}
-              <Banner />
-              
+              {/* HomeCarousel */}
+              <HomeCarousel />
             </Grid>
 
             <Grid item xs={12}>
@@ -46,8 +44,8 @@ function Home() {
             </Grid>
 
             <Grid item xs={12}>
-              {/* banner */}
-              <Banner />
+              {/* MenuList */}
+              <MenuList />
             </Grid>
 
         </Grid>

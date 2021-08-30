@@ -10,15 +10,19 @@ const useStyles = makeStyles((theme) => ({
       marginTop: '1rem',
     },
     title: {
-      color: theme.palette.secondary.light,
+      // color: theme.palette.secondary.light,
     },
     titleBar: {
       background: 'linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
     },
+    icon: {
+      color: 'white',
+    },
 }));
 
-function Banner() {
+function MenuList() {
     const classes = useStyles();
+    
     return(
       <ImageList className={classes.banner} cols={2.5}>
         {itemData.map((item) => (
@@ -32,7 +36,7 @@ function Banner() {
               }}
               actionIcon={
                 <IconButton aria-label={`star ${item.title}`}>
-                    <Icon className={classes.title}>star_outlined</Icon>
+                    <Icon className={classes.icon}>star_outlined</Icon>
                 </IconButton>
               }
             />
@@ -44,25 +48,25 @@ function Banner() {
 
 const itemData = [
   {
-      img: 'images/breakfast.jpg',
+      img: './images/breakfast.jpg',
       title: 'Breakfast',
   },
   {
-      img: 'images/bike.jpg',
+      img: './images/bike.jpg',
       title: 'Bike',
   },
   {
-      img: 'images/burgers.jpg',
+      img: './images/burgers.jpg',
       title: 'Burgers',
   },
   {
-      img: 'images/camera.jpg',
+      img: './images/camera.jpg',
       title: 'Camera',
   },
   {
-      img: 'images/vegetables.jpg',
+      img: './images/vegetables.jpg',
       title: 'Vegetables',
   }
 ];
 
-export default Banner;
+export default MenuList;
