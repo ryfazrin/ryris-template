@@ -42,6 +42,7 @@ Features used in this project
 * [react-router-dom](https://reactrouter.com/web/guides/quick-start)
 * [Material Ui](https://material-ui.com/)
 * [Material Icon](https://fonts.google.com/icons?selected=Material+Icons)
+* [React Material Ui Carousel](https://www.npmjs.com/package/react-material-ui-carousel)
 
 ## My Issue
 
