@@ -50,13 +50,14 @@ The problem I got
 - [x] Understand clean page with component in react [React documentation](https://reactjs.org/)
 - [x] Position fixed BottomNavigation [Here](https://stackoverflow.com/questions/49145960/material-ui-bottomnavigation-is-not-sticky-by-default)
 - [x] Add React-Route to BottomNavigation [Here](https://stackoverflow.com/questions/48443772/react-material-ui-bottomnavigation-component-routing-issue/51255699)
-- [ ] Add custom style banner in home page [Got it, but not implement yet](https://learus.github.io/react-material-ui-carousel/)
+- [x] Add custom style banner in home page [Got it, but not implement yet](https://learus.github.io/react-material-ui-carousel/)
 - [ ] If page is cart page, hidden or remove button cart
 - [x] cart CardItem with Grid System [Complex-Grid](https://material-ui.com/components/grid/#complex-grid)
 - [x] history Carditem with Grid System & Box flexbox [Complex-Grid](https://material-ui.com/components/grid/#complex-grid) - [Flexbox](https://material-ui.com/system/flexbox/)
 - [x] Confused. Changed git branch, and merged main [Here](https://stackoverflow.com/questions/1628563/move-the-most-recent-commits-to-a-new-branch-with-git)
 - [x] BrowserRouter or HashRouter? [Here](https://stackoverflow.com/questions/51974369/what-is-the-difference-between-hashrouter-and-browserrouter-in-react)
 - [x] add button back in header [Here](https://www.w3schools.com/jsref/met_his_back.asp)
+- [x] Center a component in Grid [Here](https://stackoverflow.com/questions/50766693/how-to-center-a-component-in-material-ui-and-make-it-responsive)
 - [ ] any...
 
 ## References
