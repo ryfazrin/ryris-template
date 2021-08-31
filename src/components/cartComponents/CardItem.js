@@ -5,7 +5,8 @@ import {
   Button,
   Paper,
   Grid,
-  ButtonBase
+  ButtonBase,
+  ButtonGroup
 } from "@material-ui/core";
 import React from "react";
 
@@ -19,7 +20,6 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     margin: "auto",
-    maxWidth: 500
   },
   image: {
     width: '100%',
@@ -36,10 +36,10 @@ function CardItem() {
   const classes = useStyles();
 
   return(
-      <div className={classes.root}>
+    <div className={classes.root}>
       <Paper className={classes.paper}>
         <Grid container spacing={2}>
-          <Grid item xs={6} container>
+          <Grid item xs={5} container>
             <Grid item xs container direction="column" spacing={2}>
               <Grid item xs>
                 <Typography gutterBottom variant="subtitle1">
@@ -60,7 +60,7 @@ function CardItem() {
               </Grid>
             </Grid>
           </Grid>
-          <Grid xs={6} item>
+          <Grid xs={5} item>
             <ButtonBase className={classes.image}>
               <img
                 className={classes.img}
@@ -68,6 +68,18 @@ function CardItem() {
                 src="images/breakfast.jpg"
               />
             </ButtonBase>
+          </Grid>
+          <Grid xs={2} item container alignItems="center" justify="center">
+            <ButtonGroup 
+              orientation="vertical"
+              color="primary"
+              aria-label="vertical contained primary button group"
+              variant="contained"
+            >
+              <Button>+</Button>
+              <Button variant="text">11</Button>
+              <Button>-</Button>
+            </ButtonGroup>
           </Grid>
         </Grid>
       </Paper>

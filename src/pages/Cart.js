@@ -21,7 +21,7 @@ function Cart() {
 
   for (let i = 0; i < 3; i++) {
     item.push(
-      <Grid item className={classes.cardItem} xs={12}>
+      <Grid item xs={12}>
         <CardItem />
       </Grid>
     );
@@ -29,7 +29,7 @@ function Cart() {
 
   return(
     <Container maxWidth="md">
-      <Grid className={classes.root} container spacing={2} xs={12}>
+      <Grid className={classes.root} container spacing={2}>
 
         <Grid item xs={12}>
           <Typography variant="h4" gutterBottom>
@@ -39,7 +39,7 @@ function Cart() {
 
         {item}
 
-        <Grid item xs={12} className={classes.description}>
+        {/* <Grid item xs={12} className={classes.description}>
           <Grid container>
             <Grid item xs={8}>
               <Typography>Ada lagi yang ingin dipesan?</Typography>
@@ -57,7 +57,7 @@ function Cart() {
           <Button variant="contained" color="secondary" fullWidth component={Link} to="/order-details">
             Pesan
           </Button>
-        </Grid>
+        </Grid> */}
 
       </Grid>
     </Container>
