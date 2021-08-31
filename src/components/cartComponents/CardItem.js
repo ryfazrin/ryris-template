@@ -6,7 +6,10 @@ import {
   Paper,
   Grid,
   ButtonBase,
-  ButtonGroup
+  ButtonGroup,
+  Divider,
+  Box,
+  IconButton
 } from "@material-ui/core";
 import React from "react";
 
@@ -22,13 +25,13 @@ const useStyles = makeStyles((theme) => ({
     margin: "auto",
   },
   image: {
-    width: '100%',
+    width: "150px",
   },
   img: {
     margin: "auto",
     display: "block",
-    width: "100%",
-    height: "100%"
+    width: "100px",
+    height: "100px",
   }
 }));
 
@@ -52,15 +55,16 @@ function CardItem() {
                   ID: 1030114
                 </Typography>
               </Grid>
-              <Grid item>
+              {/* <Grid item>
                 <Button size="small" variant='outlined' color="secondary">
                   <Icon>list</Icon>
                     Catatan
                 </Button>
-              </Grid>
+              </Grid> */}
             </Grid>
           </Grid>
-          <Grid xs={5} item>
+
+          <Grid xs={5} item container alignItems="center" justify="center">
             <ButtonBase className={classes.image}>
               <img
                 className={classes.img}
@@ -69,17 +73,39 @@ function CardItem() {
               />
             </ButtonBase>
           </Grid>
+
           <Grid xs={2} item container alignItems="center" justify="center">
             <ButtonGroup 
               orientation="vertical"
-              color="primary"
-              aria-label="vertical contained primary button group"
-              variant="contained"
+              color="secondary"
+              aria-label="vertical outlined primary button group"
+              variant="text"
             >
-              <Button>+</Button>
-              <Button variant="text">11</Button>
-              <Button>-</Button>
+              <IconButton>
+                <Icon>add</Icon>
+              </IconButton>
+              <Button>11</Button>
+              <IconButton >
+                <Icon>remove</Icon>
+              </IconButton>
             </ButtonGroup>
+          </Grid>
+
+          <Grid item xs={12}>
+            <Divider />
+            <Box display="flex" marginTop={2} justifyContent="flex-end" bgcolor="background.paper">
+              <Box flexGrow={1} justifyContent="center" marginRight='10px'>
+                <Button size="small" variant='outlined' color="secondary">
+                  <Icon>list</Icon>
+                    Catatan
+                </Button>
+              </Box>
+              <Box>
+                <Typography variant="subtitle1" gutterBottom>
+                  Tambahkan toping coklat ...
+                </Typography>
+              </Box>
+            </Box>
           </Grid>
         </Grid>
       </Paper>

@@ -39,7 +39,7 @@ function Cart() {
 
         {item}
 
-        {/* <Grid item xs={12} className={classes.description}>
+        <Grid item xs={12} className={classes.description}>
           <Grid container>
             <Grid item xs={8}>
               <Typography>Ada lagi yang ingin dipesan?</Typography>
@@ -57,7 +57,7 @@ function Cart() {
           <Button variant="contained" color="secondary" fullWidth component={Link} to="/order-details">
             Pesan
           </Button>
-        </Grid> */}
+        </Grid>
 
       </Grid>
     </Container>
