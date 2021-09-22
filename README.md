@@ -64,6 +64,7 @@ The problem I got
 
 Reference but not urgent.
 * [History-Router](https://github.com/remix-run/history/tree/main/docs)
+* [Image Slider(Multiple)](https://react-slideshow-image.netlify.app/multiple-slides)
 
 ## Available Scripts in Ryris
 
