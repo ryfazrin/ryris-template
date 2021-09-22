@@ -13,6 +13,7 @@ import {
 } from "@material-ui/core";
 import React from "react";
 import clsx from 'clsx';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -76,7 +77,7 @@ function CardItem() {
           </CardContent>
           <Divider />
           <CardActions>
-            <Button variant="contained" color="secondary" fullWidth>
+            <Button variant="contained" color="secondary" fullWidth component={Link} to="/cart">
               Tambah
             </Button>
           </CardActions>

@@ -12,7 +12,7 @@ const NoMatch = () => {
   return (
     <div>
       <h3>
-        No match for <code>{location.pathname}</code>
+        Ga ada di <code>{location.pathname}</code>
       </h3>
     </div>
   );

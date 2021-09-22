@@ -15,7 +15,11 @@ function History() {
   const item = [];
 
   for (let i = 0; i < 3; i++) {
-    item.push(<Grid item xs={12} className={classes.cardItem}><CardItem /></Grid>);
+    item.push(
+      <Grid item xs={12}>
+        <CardItem />
+      </Grid>
+    );
   }
 
   return(
