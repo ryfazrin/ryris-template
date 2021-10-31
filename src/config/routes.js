@@ -5,6 +5,7 @@ import Favorite from "./../pages/Favorite";
 import History from "./../pages/History";
 import BestSelling from "./../pages/BestSelling";
 import Cart from './../pages/Cart';
+import OrderDetails from "../pages/OrderDetails";
 
 const NoMatch = () => {
   let location = useLocation();
@@ -38,6 +39,9 @@ function Routes() {
       </Route>
       <Route exact path="/cart">
         <Cart />
+      </Route>
+      <Route exact path="/order-details">
+        <OrderDetails />
       </Route>
       {/* <Route exact path="/account">
         <Account />
